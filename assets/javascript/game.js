@@ -65,7 +65,8 @@ function startGame() {
 
   // At the start of the game, random number is generated
   randomNum = 19 + Math.floor(Math.random() * 120);
-  console.log(randomNum); //TODO Display the randomNum to page at html id="random-num-box"
+  console.log(randomNum); 
+  document.getElementById("random-num-box").textContent = randomNum;
 
   //At the start of the game, the crystals are assigned with a random hidden value
   //Each crystal cannot generate the same hidden value
