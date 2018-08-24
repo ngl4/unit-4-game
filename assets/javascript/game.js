@@ -16,20 +16,6 @@ $(document).ready(function() {
 
   //Buttons click for each crystal
 
-  //WINS
-  //When total score num === the random number, win-num ++
-  //id = "win-lose-message"
-  //Display statement: "You Win!"
-  //restart the game: generate a new random number; and crystal regenerated hidden value
-  //WINS number should NOT BE CHANGING
-
-  //LOSES
-  //When total score num > the random number, lose-num ++
-  //id = "win-lose-message"
-  //Display statement: "You Lose!"
-  //restart the game: generate a new random number; and crystal regenerated hidden value
-  //LOSES number should NOT BE CHANGING
-
   $("#crystal-red-img").on("click", function() {
     console.log((totalScoreNum += crystalRedNum));
     console.log(totalScoreNum);
@@ -159,17 +145,3 @@ function startGame() {
   }
 }
 
-//Gaming
-
-//html id="random-num-box"
-//When win or lose, random number is generated again
-//random number should be between 19 - 120.
-
-//html id="crystal-red-box"; "crystal-blue-box"; "crystal-yellow-box"; "crystal-green-box"
-//When win or lose, the hidden value of each crystal is regenerated with a new random hidden value
-//Each crystal should have a random hidden value between 1 - 12
-//Buttons' click function for each crystals
-//When a button is clicked, the hidden value will add to the total score
-
-//html id="total-score-num"
-//Compare total score number (in the total-score-num) with computer generated random number (in the random-num-box)
