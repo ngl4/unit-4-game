@@ -11,13 +11,7 @@ var crystalYellowNum;
 var crystalGreenNum;
 
 $(document).ready(function() {
-  if (gameStarted) {
-    console.log("You are currently playing!");
 
-
-
-
-  } else {
     startGame();
 
     $("#crystal-red-img").on("click", function() {
@@ -56,8 +50,7 @@ $(document).ready(function() {
 
     });
 
-  }
-});
+  });
 
 function startGame() {
   console.log("This game has started");
