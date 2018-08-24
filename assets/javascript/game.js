@@ -15,7 +15,7 @@ $(document).ready(function() {
   startGame();
 
   //Buttons click for each crystal
-  
+
   //WINS
   //When total score num === the random number, win-num ++
   //id = "win-lose-message"
@@ -40,11 +40,13 @@ $(document).ready(function() {
       console.log(winNum);
       $("#win-num").text(winNum);
       $("#win-lose-message").text("You Win!!!");
+      startGame();
     } else if (totalScoreNum > randomNum) {
       loseNum++;
       console.log(loseNum);
       $("#lose-num").text(loseNum);
       $("#win-lose-message").text("You Lose!!!");
+      startGame();
     }
   });
 
@@ -58,11 +60,13 @@ $(document).ready(function() {
       console.log(winNum);
       $("#win-num").text(winNum);
       $("#win-lose-message").text("You Win!!!");
+      startGame();
     } else if (totalScoreNum > randomNum) {
       loseNum++;
       console.log(loseNum);
       $("#lose-num").text(loseNum);
       $("#win-lose-message").text("You Lose!!!");
+      startGame();
     }
   });
 
@@ -76,11 +80,13 @@ $(document).ready(function() {
       console.log(winNum);
       $("#win-num").text(winNum);
       $("#win-lose-message").text("You Win!!!");
+      startGame();
     } else if (totalScoreNum > randomNum) {
       loseNum++;
       console.log(loseNum);
       $("#lose-num").text(loseNum);
       $("#win-lose-message").text("You Lose!!!");
+      startGame();
     }
   });
 
@@ -94,11 +100,13 @@ $(document).ready(function() {
       console.log(winNum);
       $("#win-num").text(winNum);
       $("#win-lose-message").text("You Win!!!");
+      startGame();
     } else if (totalScoreNum > randomNum) {
       loseNum++;
       console.log(loseNum);
       $("#lose-num").text(loseNum);
       $("#win-lose-message").text("You Lose!!!");
+      startGame();
     }
   });
 });
@@ -147,6 +155,7 @@ function startGame() {
 
     //total score number is set to Zero
     totalScoreNum = 0;
+    $("#total-score-num").text(totalScoreNum);
   }
 }
 
