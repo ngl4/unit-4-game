@@ -5,77 +5,103 @@ var loseNum = 0;
 var totalScoreNum = 0;
 var randomNum;
 var gameStarted = false;
+var clicksTotalArr = [];
 var crystalBlueNum;
 var crystalRedNum;
 var crystalYellowNum;
 var crystalGreenNum;
 
 $(document).ready(function() {
+  startGame();
 
-    startGame();
+  //Buttons click for each crystal
+  
+  //WINS
+  //When total score num === the random number, win-num ++
+  //id = "win-lose-message"
+  //Display statement: "You Win!"
+  //restart the game: generate a new random number; and crystal regenerated hidden value
+  //WINS number should NOT BE CHANGING
 
-    $("#crystal-red-img").on("click", function() {
+  //LOSES
+  //When total score num > the random number, lose-num ++
+  //id = "win-lose-message"
+  //Display statement: "You Lose!"
+  //restart the game: generate a new random number; and crystal regenerated hidden value
+  //LOSES number should NOT BE CHANGING
 
-      console.log(totalScoreNum += crystalRedNum);
-      console.log(totalScoreNum);
-      $("#total-score-num").text(totalScoreNum);
+  $("#crystal-red-img").on("click", function() {
+    console.log((totalScoreNum += crystalRedNum));
+    console.log(totalScoreNum);
+    $("#total-score-num").text(totalScoreNum);
 
-
-    });
-
-    $("#crystal-blue-img").on("click", function() {
-
-      console.log(totalScoreNum += crystalBlueNum);
-      console.log(totalScoreNum);
-      $("#total-score-num").text(totalScoreNum);
-
-
-    });
-
-    $("#crystal-yellow-img").on("click", function() {
-
-      console.log(totalScoreNum += crystalYellowNum);
-      console.log(totalScoreNum);
-      $("#total-score-num").text(totalScoreNum);
-
-    });
-
-    $("#crystal-green-img").on("click", function() {
-
-      console.log(totalScoreNum += crystalGreenNum);
-      console.log(totalScoreNum);
-      $("#total-score-num").text(totalScoreNum);
-    });
-
-    //WINS
-//When total score num === the random number, win-num ++
-//id = "win-lose-message"
-//Display statement: "You Win!"
-//restart the game: generate a new random number; and crystal regenerated hidden value
-//WINS number should NOT BE CHANGING
-
-
-if (totalScoreNum === randomNum) {
-  winNum++;
-  console.log("Hey total is: " + totalScoreNum);
-  console.log(winNum);
-
-  //$("#win-num").text(winNum);
-  //$("#win-lose-message").text("You Win!!!");
-}else {
-  loseNum--;
-  $("#lose-num").text(loseNum);
-  $("#win-lose-message").text("You Win!!!");
-}
-
-//LOSES
-//When total score num > the random number, lose-num ++
-//id = "win-lose-message"
-//Display statement: "You Lose!"
-//restart the game: generate a new random number; and crystal regenerated hidden value
-//LOSES number should NOT BE CHANGING
-
+    if (totalScoreNum === randomNum) {
+      winNum++;
+      console.log(winNum);
+      $("#win-num").text(winNum);
+      $("#win-lose-message").text("You Win!!!");
+    } else if (totalScoreNum > randomNum) {
+      loseNum++;
+      console.log(loseNum);
+      $("#lose-num").text(loseNum);
+      $("#win-lose-message").text("You Lose!!!");
+    }
   });
+
+  $("#crystal-blue-img").on("click", function() {
+    console.log((totalScoreNum += crystalBlueNum));
+    console.log(totalScoreNum);
+    $("#total-score-num").text(totalScoreNum);
+
+    if (totalScoreNum === randomNum) {
+      winNum++;
+      console.log(winNum);
+      $("#win-num").text(winNum);
+      $("#win-lose-message").text("You Win!!!");
+    } else if (totalScoreNum > randomNum) {
+      loseNum++;
+      console.log(loseNum);
+      $("#lose-num").text(loseNum);
+      $("#win-lose-message").text("You Lose!!!");
+    }
+  });
+
+  $("#crystal-yellow-img").on("click", function() {
+    console.log((totalScoreNum += crystalYellowNum));
+    console.log(totalScoreNum);
+    $("#total-score-num").text(totalScoreNum);
+
+    if (totalScoreNum === randomNum) {
+      winNum++;
+      console.log(winNum);
+      $("#win-num").text(winNum);
+      $("#win-lose-message").text("You Win!!!");
+    } else if (totalScoreNum > randomNum) {
+      loseNum++;
+      console.log(loseNum);
+      $("#lose-num").text(loseNum);
+      $("#win-lose-message").text("You Lose!!!");
+    }
+  });
+
+  $("#crystal-green-img").on("click", function() {
+    console.log((totalScoreNum += crystalGreenNum));
+    console.log(totalScoreNum);
+    $("#total-score-num").text(totalScoreNum);
+
+    if (totalScoreNum === randomNum) {
+      winNum++;
+      console.log(winNum);
+      $("#win-num").text(winNum);
+      $("#win-lose-message").text("You Win!!!");
+    } else if (totalScoreNum > randomNum) {
+      loseNum++;
+      console.log(loseNum);
+      $("#lose-num").text(loseNum);
+      $("#win-lose-message").text("You Lose!!!");
+    }
+  });
+});
 
 function startGame() {
   console.log("This game has started");
@@ -83,7 +109,7 @@ function startGame() {
 
   // At the start of the game, random number is generated
   randomNum = 19 + Math.floor(Math.random() * 120);
-  console.log(randomNum); 
+  console.log(randomNum);
   $("#random-num-box").text(randomNum);
 
   //At the start of the game, the crystals are assigned with a random hidden value
@@ -95,8 +121,7 @@ function startGame() {
     crystalBlueNum === crystalYellowNum ||
     crystalBlueNum === crystalGreenNum ||
     crystalYellowNum === crystalGreenNum
-  )
-  {
+  ) {
     crystalRedNum = 1 + Math.floor(Math.random() * 12);
     console.log("The Red Crystal is: " + crystalRedNum);
     crystalBlueNum = 1 + Math.floor(Math.random() * 12);
@@ -113,19 +138,15 @@ function startGame() {
     crystalRedNum !== crystalGreenNum &&
     crystalBlueNum !== crystalYellowNum &&
     crystalBlueNum !== crystalGreenNum &&
-    crystalYellowNum !== crystalGreenNum 
+    crystalYellowNum !== crystalGreenNum
   ) {
-
-    console.log("Red Crystal is: " + crystalRedNum); 
+    console.log("Red Crystal is: " + crystalRedNum);
     console.log("Blue Crystal is: " + crystalBlueNum);
     console.log("Yellow Crystal is: " + crystalYellowNum);
     console.log("Green Crystal is: " + crystalGreenNum);
 
-
     //total score number is set to Zero
     totalScoreNum = 0;
-    
-
   }
 }
 
@@ -143,5 +164,3 @@ function startGame() {
 
 //html id="total-score-num"
 //Compare total score number (in the total-score-num) with computer generated random number (in the random-num-box)
-
-
