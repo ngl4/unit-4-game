@@ -10,6 +10,7 @@ var crystalRedNum;
 var crystalYellowNum;
 var crystalGreenNum;
 
+//Once the document is fully loaded, this game will start!
 $(document).ready(function() {
   startGame();
 
