@@ -63,24 +63,9 @@ function startGame() {
     crystalYellowNum = 1 + Math.floor(Math.random() * 12);
     crystalGreenNum = 1 + Math.floor(Math.random() * 12);
   }
-
-  if (
-    crystalRedNum !== crystalBlueNum &&
-    crystalRedNum !== crystalYellowNum &&
-    crystalRedNum !== crystalGreenNum &&
-    crystalBlueNum !== crystalYellowNum &&
-    crystalBlueNum !== crystalGreenNum &&
-    crystalYellowNum !== crystalGreenNum
-  ) {
-    crystalRedNum;
-    crystalBlueNum;
-    crystalYellowNum;
-    crystalGreenNum;
-
-    //total score number is set to Zero
-    totalScoreNum = 0;
-    $("#total-score-num").text(totalScoreNum);
-  }
+  //total score number is set to Zero
+  totalScoreNum = 0;
+  $("#total-score-num").text(totalScoreNum);
 }
 
 //Function to determine win or lose and then restart the game without changing the win or lose number(s)
