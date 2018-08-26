@@ -18,24 +18,28 @@ $(document).ready(function() {
   $("#crystal-red-img").on("click", function() {
     totalScoreNum += crystalRedNum;
     $("#total-score-num").text(totalScoreNum);
+    $("#win-lose-message").text("");
     setWinLose();
   });
 
   $("#crystal-blue-img").on("click", function() {
     totalScoreNum += crystalBlueNum;
     $("#total-score-num").text(totalScoreNum);
+    $("#win-lose-message").text("");
     setWinLose();
   });
 
   $("#crystal-yellow-img").on("click", function() {
     totalScoreNum += crystalYellowNum;
     $("#total-score-num").text(totalScoreNum);
+    $("#win-lose-message").text("");
     setWinLose();
   });
 
   $("#crystal-green-img").on("click", function() {
     totalScoreNum += crystalGreenNum;
     $("#total-score-num").text(totalScoreNum);
+    $("#win-lose-message").text("");
     setWinLose();
   });
 });
