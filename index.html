@@ -21,23 +21,25 @@
 
 
 
-<header>Crystals Collector</header>
+<header class="container">Crystals Collector</header>
 
 <body>
 
     <div>
 
-        <div>
+        <div class="container">
 
             <section>
+                
                 <p> You will be given a random number at the start of the game </p>
 
 
                 <p>When you click on a crystal, it will add a specific amount of points to your total score. </p>
 
 
-                <p>you win if their total score matches the random number from the beginning of the game. You lose if their
-                    score goes above the random number.</p>
+                <p>You win if their total score matches the random number from the beginning of the game. </p>
+                
+                <p>You lose if their score goes above the random number.</p>
 
 
                 <p>The value of each crystal is hidden from you until you click on it.</p>
@@ -49,23 +51,24 @@
 
             </section>
 
-        </div>
-    </div>
+        </div class="container">
+
 
 
     <div>
 
-        <div>
+        <div id="random-score" class="container">
+
+            <div> Your Target Score is: </div>
 
             <div id="random-num-box" style="width: 120px; height: 150px; font-size: 40px"></div>
 
         </div>
 
-        <div>
+        <div class="container">
 
             <div id="win-lose-box">
 
-                <p id="win-lose-message"></p>
                 <p>You win:
                     <span id="win-num"></span>
                 </p>
@@ -81,26 +84,28 @@
     <div>
 
         <div id="crystal-red-box">
-            <img id="crystal-red-img" class="img-border red-rotated red-img-position" style="width: 200px; height: 190px" src="assets/images/red-crystal.jpg">
+            <img id="crystal-red-img" class="img-border red-rotated red-img-position" style="width: 130px; height: 120px" src="assets/images/red-crystal.jpg">
         </div>
 
         <div id="crystal-blue-box">
-            <img id="crystal-blue-img" class="img-border blue-rotated blue-img-position" style="width: 230px; height: 220px" src="assets/images/blue-crystal.jpg">
+            <img id="crystal-blue-img" class="img-border blue-rotated blue-img-position" style="width: 130px; height: 120px" src="assets/images/blue-crystal.jpg">
         </div>
 
         <div id="crystal-yellow-box">
-            <img id="crystal-yellow-img" class="img-border yellow-rotated yellow-img-position" style="width: 200px; height: 190px" src="assets/images/yellow-crystal.jpg">
+            <img id="crystal-yellow-img" class="img-border yellow-rotated yellow-img-position" style="width: 110px; height: 100px" src="assets/images/yellow-crystal.jpg">
         </div>
 
         <div id="crystal-green-box">
-            <img id="crystal-green-img" class="img-border green-rotated green-img-position" style="width: 210px; height: 200px" src="assets/images/green-crystal.jpg">
+            <img id="crystal-green-img" class="img-border green-rotated green-img-position" style="width: 120px; height: 110px" src="assets/images/green-crystal.jpg">
         </div>
 
     </div>
 
-    <div>
+    <div class="container score-box">
 
-        <div id="total-score-message"> Your Total Score is: </div>
+        <p id="win-lose-message" class="win-lose-message"></p>
+
+        <div> Your Total Score is: </div>
 
         <div id="total-score-num" style="width: 120px; height: 180px; font-size: 40px"></div>
 
