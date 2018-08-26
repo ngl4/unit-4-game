@@ -49,7 +49,11 @@ function startGame() {
   gameStarted = true;
 
   // At the start of the game, random number is generated
-  randomNum = 19 + Math.floor(Math.random() * 120);
+
+  randomNum = Math.floor(Math.random() * 121);
+  while (randomNum < 19) {
+    randomNum = Math.floor(Math.random() * 121);
+  }
   $("#random-num-box").text(randomNum);
 
   //At the start of the game, the crystals are assigned with a random hidden value
