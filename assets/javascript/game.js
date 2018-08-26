@@ -18,7 +18,7 @@ $(document).ready(function() {
   $("#crystal-red-img").on("click", function() {
     totalScoreNum += crystalRedNum;
     $("#total-score-num").text(totalScoreNum);
-    $("#win-lose-message").text("");
+    $("#win-lose-message").text(""); //to remove You Win or You Lose message
     setWinLose();
   });
 
