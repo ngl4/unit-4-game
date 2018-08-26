@@ -10,11 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Metamorphous|Tinos" rel="stylesheet">
     <!-- CSS reset and style -->
     <link rel="stylesheet" href="assets/css/reset.css">
-   <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- JQuery CDN  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -30,7 +26,7 @@
         <div class="container">
 
             <section>
-                
+
                 <p> You will be given a random number at the start of the game </p>
 
 
@@ -38,7 +34,7 @@
 
 
                 <p>You win if their total score matches the random number from the beginning of the game. </p>
-                
+
                 <p>You lose if their score goes above the random number.</p>
 
 
@@ -55,69 +51,69 @@
 
 
 
-    <div>
+        <div>
 
-        <div class="container">
+            <div class="container">
 
-        <div id="random-score">
+                <div id="random-score">
 
-            <div> Your Target Score is: </div>
+                    <div> Your Target Score is: </div>
 
-            <div id="random-num-box" style="width: 120px; height: 150px; font-size: 40px"></div>
+                    <div id="random-num-box" style="width: 120px; height: 150px; font-size: 40px"></div>
 
-        </div>
-    </div>
-
-        <div class="container">
-
-            <div id="win-lose-box">
-
-                <p>You win:
-                    <span id="win-num"></span>
-                </p>
-                <p>You lose:
-                    <span id="lose-num"></span>
-                </p>
-
+                </div>
             </div>
+
+            <div class="container">
+
+                <div id="win-lose-box">
+
+                    <p>You win:
+                        <span id="win-num"></span>
+                    </p>
+                    <p>You lose:
+                        <span id="lose-num"></span>
+                    </p>
+
+                </div>
+            </div>
+
         </div>
 
-    </div>
+        <div>
 
-    <div>
+            <div id="crystal-red-box">
+                <img id="crystal-red-img" class="img-border red-rotated red-img-position" style="width: 130px; height: 120px" src="assets/images/red-crystal.jpg">
+            </div>
 
-        <div id="crystal-red-box">
-            <img id="crystal-red-img" class="img-border red-rotated red-img-position" style="width: 130px; height: 120px" src="assets/images/red-crystal.jpg">
+            <div id="crystal-blue-box">
+                <img id="crystal-blue-img" class="img-border blue-rotated blue-img-position" style="width: 130px; height: 120px" src="assets/images/blue-crystal.jpg">
+            </div>
+
+            <div id="crystal-yellow-box">
+                <img id="crystal-yellow-img" class="img-border yellow-rotated yellow-img-position" style="width: 110px; height: 100px" src="assets/images/yellow-crystal.jpg">
+            </div>
+
+            <div id="crystal-green-box">
+                <img id="crystal-green-img" class="img-border green-rotated green-img-position" style="width: 120px; height: 110px" src="assets/images/green-crystal.jpg">
+            </div>
+
         </div>
 
-        <div id="crystal-blue-box">
-            <img id="crystal-blue-img" class="img-border blue-rotated blue-img-position" style="width: 130px; height: 120px" src="assets/images/blue-crystal.jpg">
+        <div class="container score-box">
+
+            <p id="win-lose-message" class="win-lose-message"></p>
+            <br>
+
+            <div> Your Total Score is: </div>
+
+            <div id="total-score-num" style="width: 120px; height: 180px; font-size: 40px"></div>
+
         </div>
 
-        <div id="crystal-yellow-box">
-            <img id="crystal-yellow-img" class="img-border yellow-rotated yellow-img-position" style="width: 110px; height: 100px" src="assets/images/yellow-crystal.jpg">
-        </div>
 
-        <div id="crystal-green-box">
-            <img id="crystal-green-img" class="img-border green-rotated green-img-position" style="width: 120px; height: 110px" src="assets/images/green-crystal.jpg">
-        </div>
-
-    </div>
-
-    <div class="container score-box">
-
-        <p id="win-lose-message" class="win-lose-message"></p>
-        <br>
-
-        <div> Your Total Score is: </div>
-
-        <div id="total-score-num" style="width: 120px; height: 180px; font-size: 40px"></div>
-
-    </div>
-
-
-    <!-- game.js -->
-    <script src="assets/javascript/game.js"></script>
+        <!-- game.js -->
+        <script src="assets/javascript/game.js"></script>
 
 </body>
 
