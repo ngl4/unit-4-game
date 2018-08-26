@@ -9,57 +9,39 @@
     <!-- Google Fonts: Metamorphous and Tinos -->
     <link href="https://fonts.googleapis.com/css?family=Metamorphous|Tinos" rel="stylesheet">
     <!-- CSS reset and style -->
-    <!-- <link rel="stylesheet" href="assets/css/reset.css">
-   <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+   <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 
-    <!-- Internal CSS -->
-    <style>
-        header {
-
-            font-family: 'Metamorphous', cursive;
-            font-size: 30px;
-        }
-
-        body {
-
-            font-family: 'Tinos', serif;
-        }
-    </style>
     <!-- JQuery CDN  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 </head>
 
 
 
-<header class="container mb-5 mt-4 p-3 bg-light">Crystals Collector</header>
+<header>Crystals Collector</header>
 
-<body class="container">
+<body>
 
-    <div class="row">
+    <div>
 
-        <div class="col-md-12">
+        <div>
 
             <section>
                 <p> You will be given a random number at the start of the game </p>
 
-                <br>
 
                 <p>When you click on a crystal, it will add a specific amount of points to your total score. </p>
 
-                <br>
 
                 <p>you win if their total score matches the random number from the beginning of the game. You lose if their
                     score goes above the random number.</p>
 
-                <br>
 
                 <p>The value of each crystal is hidden from you until you click on it.</p>
 
-                <br>
 
                 <p>Each time when the game starts, the game will change the value of each crystal. </p>
 
@@ -71,24 +53,24 @@
     </div>
 
 
-    <div class="row">
+    <div>
 
-        <div class="col-md-7">
+        <div>
 
-            <div id="random-num-box" class="bg-info w-75 pl-3 text-white" style="width: 120px; height: 150px; font-size: 40px"></div>
+            <div id="random-num-box" style="width: 120px; height: 150px; font-size: 40px"></div>
 
         </div>
 
-        <div class="col-md-5">
+        <div>
 
-            <div id="win-lose-box" class="bg-info w-50 pl-3 pt-3 pb-3 text-white">
+            <div id="win-lose-box">
 
-                <p id ="win-lose-message"></p>
+                <p id="win-lose-message"></p>
                 <p>You win:
-                    <span id = "win-num"></span>
+                    <span id="win-num"></span>
                 </p>
                 <p>You lose:
-                    <span id = "lose-num"></span>
+                    <span id="lose-num"></span>
                 </p>
 
             </div>
@@ -96,31 +78,31 @@
 
     </div>
 
-    <div class="row">
+    <div>
 
-        <div id="crystal-red-box" class="button">
-            <img id="crystal-red-img" class="mt-3" style="width: 200px; height: 190px" src="assets/images/red-crystal.jpg">
+        <div id="crystal-red-box">
+            <img id="crystal-red-img" class="img-border red-rotated red-img-position" style="width: 200px; height: 190px" src="assets/images/red-crystal.jpg">
         </div>
 
-        <div id="crystal-blue-box" class="button">
-            <img id="crystal-blue-img" style="width: 230px; height: 220px" src="assets/images/blue-crystal.jpg">
+        <div id="crystal-blue-box">
+            <img id="crystal-blue-img" class="img-border blue-rotated blue-img-position" style="width: 230px; height: 220px" src="assets/images/blue-crystal.jpg">
         </div>
 
-        <div id="crystal-yellow-box" class="button">
-            <img id="crystal-yellow-img" class="mt-3" style="width: 200px; height: 190px" src="assets/images/yellow-crystal.jpg">
+        <div id="crystal-yellow-box">
+            <img id="crystal-yellow-img" class="img-border yellow-rotated yellow-img-position" style="width: 200px; height: 190px" src="assets/images/yellow-crystal.jpg">
         </div>
 
-        <div id="crystal-green-box" class="button">
-            <img id="crystal-green-img" class="mt-3" style="width: 210px; height: 200px" src="assets/images/green-crystal.jpg">
+        <div id="crystal-green-box">
+            <img id="crystal-green-img" class="img-border green-rotated green-img-position" style="width: 210px; height: 200px" src="assets/images/green-crystal.jpg">
         </div>
 
     </div>
 
-    <div class="row">
+    <div>
 
-        <div id="total-score-message" class="bg-info pl-3 pt-3 text-white"> Your Total Score is: </div>
+        <div id="total-score-message"> Your Total Score is: </div>
 
-        <div id="total-score-num" class="bg-info w-75 pl-3 text-white" style="width: 120px; height: 180px; font-size: 40px"></div>
+        <div id="total-score-num" style="width: 120px; height: 180px; font-size: 40px"></div>
 
     </div>
 

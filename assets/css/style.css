@@ -1,0 +1,58 @@
+html {
+
+    
+    background: url('../images/background.jpeg');
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+}
+
+header {
+
+    font-family: 'Metamorphous', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+
+    font-family: 'Tinos', serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.img-border {
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #D4CBC9;
+}
+
+.red-rotated {
+
+    transform: rotate(20deg);
+}
+
+.red-img-position {
+
+    position: relative;
+    top: -45px;
+    left: -90px;
+}
+
+.blue-rotated {
+
+    transform: rotate(20deg);
+}
+
+.blue-img-position {
+
+    position: relative;
+    top: -45px;
+    left: -90px;
+}
+
