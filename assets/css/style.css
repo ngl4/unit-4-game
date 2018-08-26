@@ -1,141 +1,190 @@
 html {
-
-    
-    background: url('../images/background.jpeg');
-    background-size: 1500px 980px;
-    background-repeat: no-repeat;
+  background: url("../images/background.jpeg");
+  background-size: 1500px 980px;
+  background-repeat: no-repeat;
 }
 
 header {
-
-    font-family: 'Metamorphous', cursive;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+  font-family: "Metamorphous", cursive;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 body {
-
-    font-family: 'Tinos', serif;
+  font-family: "Tinos", serif;
 }
 
 .container {
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: 15%;
-    width: 100%;
-    
+  display: block;
+  margin-left: auto;
+  margin-right: 15%;
+  width: 100%;
 }
 
 .img-border {
-
-    border-style: solid;
-    border-width: 5px;
-    border-color: #D4CBC9;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #d4cbc9;
 }
 
 img:hover {
-
-    border-color: #F3B54D;
-    opacity: 0.9;
+  border-color: #f3b54d;
+  opacity: 0.9;
 }
 
 .red-rotated {
-
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .red-img-position {
-
-    position: relative;
-    top: -470px;
-    left: -90px;
+  position: relative;
+  top: -470px;
+  left: -90px;
 }
 
 .blue-rotated {
-
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .blue-img-position {
-
-    position: relative;
-    top: -460px;
-    left: 60px;
+  position: relative;
+  top: -460px;
+  left: 60px;
 }
 
 .yellow-rotated {
-
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .yellow-img-position {
-
-    position: relative;
-    top: -709px;
-    left: 40px;
+  position: relative;
+  top: -709px;
+  left: 40px;
 }
 
 .green-rotated {
-
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .green-img-position {
-
-    position: relative;
-    top: -700px;
-    left: -90px;
+  position: relative;
+  top: -700px;
+  left: -90px;
 }
 
-
- .score-box {
-
-    position: relative;
-    color: white;
-    top: -530px;
-    right: -380px;
-    font-size: 30px;
-} 
-
+.score-box {
+  position: relative;
+  color: white;
+  top: -530px;
+  right: -380px;
+  font-size: 30px;
+}
 
 #random-score {
-
-    margin-top: 30px;
-    width: 260px;
-    height: 100px;
-    border-style: solid;
-    border-width: 5px;
-    border-color:  #D4CBC9;
-    margin-left: 1%;   
+  margin-top: 30px;
+  width: 260px;
+  height: 100px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #d4cbc9;
+  margin-left: 1%;
 }
 
 #win-lose-box {
+  margin-top: 80px;
+  width: 180px;
+  height: 100px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #d4cbc9;
+  margin-left: 1%;
+}
 
-    margin-top: 80px;
+#win-lose-message {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .score-box {
+    position: relative;
+    color: white;
+    top: -530px;
+    right: -600px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    background: #e8e8e8;
+    /* background: url('../images/background.jpeg'); */
+    background-size: 775px 667px;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    width: 300px;
+  }
+
+  section {
+    line-height: 1.5em;
+  }
+
+  .score-box {
+    position: none;
+    color: black;
+    top: -170px;
+    right: 0;
+    font-size: 15px;
+  }
+
+  #win-lose-box {
+    margin-top: 10px;
     width: 180px;
     height: 100px;
     border-style: solid;
     border-width: 5px;
-    border-color:  #D4CBC9;
-    margin-left: 1%;   
-}
+    border-color: #d4cbc9;
+    margin-left: 1%;
+  }
 
-#win-lose-message {
-
-    font-size: 50px;
+  #win-lose-message {
+    font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: black;
+    text-align: center;
+  }
+
+  .red-img-position {
+    position: relative;
+    top: 10px;
+    left: -150px;
+  }
+
+  .blue-img-position {
+    position: relative;
+    top: 30px;
+    left: 30px;
+  }
+
+  .yellow-img-position {
+    position: relative;
+    top: -239px;
+    left: 10px;
+  }
+
+  .green-img-position {
+    position: relative;
+    top: -210px;
+    left: -150px;
+  }
 }
-
-@media screen and (max-width: 600px) {
-
-
