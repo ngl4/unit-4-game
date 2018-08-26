@@ -113,6 +113,31 @@ img:hover {
   color: white;
 }
 
+@media screen and (max-width: 1680px) {
+
+
+  html {
+    background: url('../images/background.jpeg');
+    background-size: 1680px 1050px;
+    background-repeat: no-repeat;
+  }
+
+
+  .score-box {
+    position: relative;
+    color: white;
+    top: -530px;
+    right: -350px;
+    font-size: 30px;
+  }
+
+  #win-lose-box {
+    width: 110px;
+    height: 100px;
+ 
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .score-box {
     position: relative;
