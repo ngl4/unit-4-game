@@ -4,7 +4,7 @@ Basic JQuery Crystal Game
 This is a simple math game. The computer will randomly generated a number. User will be given a random number at the start of the game. When user clicks on a crystal, it will add a specific amount of points to your total score.User wins if their total score matches the random number from the beginning of the game.
 User loses if their score goes above the random number.The value of each crystal is hidden from you until you click on it.Each time when the game starts, the game will change the value of each crystal.
 
-Have Fun Playing this Game! 
+Have Fun Playing [this Game](https://ngl4.github.io/unit-4-game/)!
 
 
 ### Reflection:
