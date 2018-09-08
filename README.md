@@ -6,6 +6,8 @@ User loses if their score goes above the random number.The value of each crystal
 
 Have Fun Playing [this Game](https://ngl4.github.io/unit-4-game/)!
 
+![Alt Text](https://github.com/ngl4/unit-4-game/blob/master/assets/images/crystals_collector.gif)
+
 
 ### Reflection:
 I start to like JQuery more after coding this game. I write all the code based on my own pseudo-code, which is a great improvement. This game does not take me a lot of time to build and I have learned to shorten my own code and so it is more semantic and concise. I am glad I start to understand the code more than before. 
